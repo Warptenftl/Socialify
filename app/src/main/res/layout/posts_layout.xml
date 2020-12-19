@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image_post"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_person"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/post_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/post_image_home"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/ic_person"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/post_image_like_btn"
+                android:layout_width="41dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_favorite"/>
+
+            <ImageView
+                android:id="@+id/post_image_comment_btn"
+                android:layout_width="41dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/post_image_like_btn"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/ic_comment"/>
+
+            <ImageView
+                android:id="@+id/post_save_btn"
+                android:layout_width="41dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_save"
+                android:layout_marginEnd="3dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/post_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/post_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/post_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/post_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

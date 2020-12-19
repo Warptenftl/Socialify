@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="6dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_fragment_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="Username"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/option_view"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu" />
+
+            </RelativeLayout>
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_layout_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_person" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_totalpost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_totalFollowers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_totalFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Following"
+                                android:textColor="@android:color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_edit_account"
+                        android:layout_width="170dp"
+                        android:layout_height="32dp"
+                        android:text="Edit Account"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/button_black_background"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:id="@+id/mid_air"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_full_namaprofile"
+                    android:text="Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_bio_profile"
+                    android:text="Bio"
+
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_black_background">
+
+                <ImageButton
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_apps"
+                    android:id="@+id/image_grid_view_button"
+                    android:layout_weight="1"
+                    style="?android:attr/buttonBarButtonStyle"/>
+
+                <ImageButton
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/image_save_btn"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_save"
+                    android:layout_weight="1"
+                    style="?android:attr/buttonBarButtonStyle"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_upload_picimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_save_picimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

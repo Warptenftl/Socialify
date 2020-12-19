@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "304416115196",
+    "firebase_url": "https://adniinstagramclone.firebaseio.com",
+    "project_id": "adniinstagramclone",
+    "storage_bucket": "adniinstagramclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304416115196:android:7b56114a2fb590f58d8a79",
+        "android_client_info": {
+          "package_name": "com.idn.adniinstagramclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304416115196-g9nnds2lqo9pa4o40mr6o3kreom0mfai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idn.adniinstagramclone",
+            "certificate_hash": "800f567a1b6640229fc664d482ea535e0017eda4"
+          }
+        },
+        {
+          "client_id": "304416115196-b6u3qb0fg4fatnnfcm0oul45ej2vfuru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhFkoj6d3U3db2gqsLFOT3lO4WinY0IzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304416115196-b6u3qb0fg4fatnnfcm0oul45ej2vfuru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
